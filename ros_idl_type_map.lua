@@ -15,6 +15,7 @@ require "ros_idl_types.geometry_msgs_msg_Transform"
 require "ros_idl_types.geometry_msgs_msg_TransformStamped"
 require "ros_idl_types.geometry_msgs_msg_Twist"
 require "ros_idl_types.geometry_msgs_msg_Vector3"
+require "ros_idl_types.industrial_msgs_msg_RobotStatus"
 require "ros_idl_types.sensor_msgs_msg_JointState"
 require "ros_idl_types.std_msgs_msg_Header"
 require "ros_idl_types.tf2_msgs_msg_TFMessage"
@@ -40,6 +41,8 @@ types["geometry_msgs::msg::dds_::Transform_"] = geometry_msgs_msg_Transform_dese
 types["geometry_msgs::msg::dds_::TransformStamped_"] = geometry_msgs_msg_TransformStamped_deserialize
 types["geometry_msgs::msg::dds_::Twist_"] = geometry_msgs_msg_Twist_deserialize
 types["geometry_msgs::msg::dds_::Vector3_"] = geometry_msgs_msg_Vector3_deserialize
+
+types["industrial_msgs::msg::dds_::RobotStatus_"] = industrial_msgs_msg_RobotStatus_deserialize
 
 types["sensor_msgs::msg::dds_::JointState_"] = sensor_msgs_msg_JointState_deserialize
 
