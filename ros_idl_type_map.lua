@@ -2,7 +2,8 @@
 -- SPDX-License-Identifier: Apache-2.0
 
 
-package.prepend_path("ros_idl_types")
+local dir = debug.getinfo(1, "S").source:sub(2):match("(.*/)")
+package.path = dir .. "?.lua;" .. package.path
 
 
 require "ros_idl_types.builtin_interfaces_msg_Duration"
