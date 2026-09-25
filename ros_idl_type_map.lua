@@ -2,7 +2,7 @@
 -- SPDX-License-Identifier: Apache-2.0
 
 
-local dir = debug.getinfo(1, "S").source:sub(2):match("(.*/)")
+local dir = debug.getinfo(1, "S").source:sub(2):match("^(.*[/\\])")
 package.path = dir .. "?.lua;" .. package.path
 
 
